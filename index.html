@@ -30,8 +30,8 @@
 
       <ul class="topbar__nav">
         <li><a href="#dashboard" class="is-active" aria-current="page">Oversigt</a></li>
-        <li><a href="ydelser.html">Ydelser</a></li>
-        <li><a href="cases.html">Cases</a></li>
+        <li><a href="#ydelser">Ydelser</a></li>
+        <li><a href="#cases">Cases</a></li>
         <li><a href="om.html">Om mig</a></li>
       </ul>
 
@@ -173,7 +173,7 @@
       </section>
 
       <!-- Ydelser -->
-      <a class="card card--services" href="ydelser.html" data-reveal>
+      <section class="card card--services" id="ydelser" data-reveal>
         <div class="card__head">
           <span class="card__label">Ydelser</span>
         </div>
@@ -220,12 +220,10 @@
             </p>
           </li>
         </ul>
-
-        <span class="card__cta">Se ydelserne i detaljer<span class="arrow" aria-hidden="true">→</span></span>
-      </a>
+      </section>
 
       <!-- Kompetencer -->
-      <a class="card card--skills" href="kompetencer.html" data-reveal>
+      <section class="card card--skills" data-reveal>
         <div class="card__head">
           <span class="card__label">Kompetencer</span>
         </div>
@@ -259,12 +257,10 @@
             <li>DaVinci Resolve, Blender, Photoshop</li>
           </ul>
         </div>
-
-        <span class="card__cta">Hele kompetenceprofilen<span class="arrow" aria-hidden="true">→</span></span>
-      </a>
+      </section>
 
       <!-- Cases -->
-      <a class="card card--case" href="cases/escape-room.html" data-reveal>
+      <article class="card card--case" id="cases" data-reveal>
         <div class="card__head">
           <span class="card__label">Case 01</span>
           <span class="tag">Læringsdesign</span>
@@ -279,10 +275,9 @@
           <div><dt>Skala</dt><dd>150+ deltagere</dd></div>
           <div><dt>Effekt</dt><dd class="facts__hi">+35 % aktiv brug af fagtermer, før/efter-test</dd></div>
         </dl>
-        <span class="card__cta">Åbn case<span class="arrow" aria-hidden="true">→</span></span>
-      </a>
+      </article>
 
-      <a class="card card--case" href="cases/ai-strategi.html" data-reveal>
+      <article class="card card--case" data-reveal>
         <div class="card__head">
           <span class="card__label">Case 02</span>
           <span class="tag">Fagdidaktik</span>
@@ -294,13 +289,12 @@
           med personer på malerier fra Statens Museum for Kunst.
         </p>
         <dl class="facts">
-          <div><dt>Rolle</dt><dd>Rådgiver og underviser</dd></div>
-          <div><dt>Skala</dt><dd class="facts__hi">Workshops for 100+ kolleger</dd></div>
+          <div><dt>Fag</dt><dd>Tysk og kunsthistorie</dd></div>
+          <div><dt>Greb</dt><dd class="facts__hi">AI-simulerede samtaler med værker fra SMK</dd></div>
         </dl>
-        <span class="card__cta">Åbn case<span class="arrow" aria-hidden="true">→</span></span>
-      </a>
+      </article>
 
-      <a class="card card--case" href="cases/rag-chatbot.html" data-reveal>
+      <article class="card card--case" data-reveal>
         <div class="card__head">
           <span class="card__label">Case 03</span>
           <span class="tag">Implementering</span>
@@ -315,10 +309,9 @@
           <div><dt>Stak</dt><dd>Ollama, Open WebUI, RAG</dd></div>
           <div><dt>Hvorfor</dt><dd class="facts__hi">Jeg underviser kun i det, jeg selv har bygget</dd></div>
         </dl>
-        <span class="card__cta">Åbn case<span class="arrow" aria-hidden="true">→</span></span>
-      </a>
+      </article>
 
-      <a class="card card--case" href="cases/roskilde-elearning.html" data-reveal>
+      <article class="card card--case" data-reveal>
         <div class="card__head">
           <span class="card__label">Case 04</span>
           <span class="tag">Materialeudvikling</span>
@@ -333,8 +326,7 @@
           <div><dt>Målgruppe</dt><dd class="facts__hi">8.000 frivillige årligt</dd></div>
           <div><dt>Leverance</dt><dd>Visuel identitet &amp; materiale</dd></div>
         </dl>
-        <span class="card__cta">Åbn case<span class="arrow" aria-hidden="true">→</span></span>
-      </a>
+      </article>
 
       <!-- Værktøjsstribe -->
       <section class="card card--tools" aria-label="Værktøjer" data-reveal>
@@ -370,8 +362,8 @@
              nogen trykker play. -->
         <figure class="contact__video">
           <video controls preload="none" playsinline poster="assets/kaffe-poster.jpg" width="1280" height="720">
-            <source src="https://github.com/hpbonnichsen/hpb_systems_portfolio/releases/download/media-v1/kaffe.mp4" type="video/mp4">
-            <a href="https://github.com/hpbonnichsen/hpb_systems_portfolio/releases/download/media-v1/kaffe.mp4">Hent videoen</a>
+            <source src="https://github.com/hpbonnichsen/hpbonnichsen.github.io/releases/download/media-v1/kaffe.mp4" type="video/mp4">
+            <a href="https://github.com/hpbonnichsen/hpbonnichsen.github.io/releases/download/media-v1/kaffe.mp4">Hent videoen</a>
           </video>
           <figcaption>Kaffe. 28 sekunder. Optaget og klippet af mig.</figcaption>
         </figure>
@@ -380,8 +372,6 @@
           <a class="btn btn--primary" href="mailto:hp.bonnichsen@gmail.com">hp.bonnichsen@gmail.com</a>
           <!-- TODO: læg CV'et i assets/ -->
           <a class="btn" href="assets/hpb_cv.pdf" download>Hent CV</a>
-          <!-- TODO: indsæt din LinkedIn-URL -->
-          <a class="btn" href="#">LinkedIn</a>
         </div>
       </section>
 
