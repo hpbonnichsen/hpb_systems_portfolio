@@ -19,7 +19,7 @@
     "NAME     Hans-Peter Bonnichsen",
     "BASE     København N",
     "EDU      Cand.mag. tysk + film- og medievidenskab",
-    "         Master i informatik, undervejs",
+    "         Master i informatik, påbegyndt",
     "WORK     12 år undervisning",
     "         AI-adoption, workshops, medieproduktion",
     "STATUS   ledig fra nu",
