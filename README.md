@@ -1,4 +1,4 @@
-# hpb_systems — portfolio
+# hpb_systems - portfolio
 
 CV-/portfolioside for Hans-Peter Bonnichsen, AI-konsulent & formidler.
 Ren HTML, CSS og JavaScript — ingen build, ingen npm, ingen afhængigheder.
