@@ -610,8 +610,56 @@ a.card:hover .card__cta { color: var(--amber-hot); }
   color: var(--ink);
 }
 
-.chapter__body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 320px); gap: 32px; align-items: start; }
-.chapter__body--plain { grid-template-columns: minmax(0, 1fr); }
+/* Tekstspalten er låst til læsbar bredde, og margenspalten holder det, der
+   ellers ville have efterladt siden halvtom: portræt, pull-quotes, billeder.
+   Luften lægger sig imellem de to i stedet for bag ved teksten. */
+.chapter__body {
+  display: grid;
+  grid-template-columns: minmax(0, 68ch) minmax(0, 340px);
+  justify-content: space-between;
+  gap: 40px;
+  align-items: start;
+}
+.chapter__body--plain { grid-template-columns: minmax(0, 68ch); }
+
+/* Galleriet går på tværs af begge spalter. */
+.chapter__body .gallery { grid-column: 1 / -1; }
+
+.chapter__aside { align-self: stretch; display: grid; gap: 22px; align-content: start; }
+
+.pullquote {
+  margin: 0;
+  padding-left: 18px;
+  border-left: 2px solid var(--amber-hot);
+  font-family: var(--font-mono);
+  font-size: 1.02rem;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: var(--amber-hot);
+}
+
+/* Faktablok i margenen. Samme dashboard-idiom som forsiden, så margenspalten
+   bærer sin egen vægt i stedet for at stå tom under pull-quoten. */
+.sidenote {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #101010;
+}
+
+.sidenote__label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.sidenote .facts { padding-top: 0; border-top: none; gap: 10px; }
+.sidenote .tools { gap: 6px; }
+.sidenote .tools li { padding: 5px 11px; font-size: 0.68rem; }
 
 .prose { display: grid; gap: 14px; max-width: 68ch; }
 .prose p { font-size: 0.96rem; color: var(--ink); }
@@ -627,6 +675,9 @@ a.card:hover .card__cta { color: var(--amber-hot); }
   font-size: 0.68rem;
   color: var(--ink-dim);
 }
+
+/* Figur midt i en brødtekst: skal ikke fylde hele spaltebredden. */
+.figure--inline { max-width: 420px; margin: 4px 0; }
 
 .ph {
   display: grid;
@@ -650,6 +701,19 @@ a.card:hover .card__cta { color: var(--amber-hot); }
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 12px;
   margin-top: 18px;
+}
+
+/* Kvadratisk beskæring i browseren, så billeder i forskellige formater stadig
+   giver en ren række. Originalerne røres ikke. */
+.gallery .figure img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Plakater og andet, der ikke tåler beskæring: vis hele værket inde i feltet. */
+.gallery .figure--whole img {
+  object-fit: contain;
+  background: #0d0d0d;
 }
 
 /* ── Footer ───────────────────────────────────────────────────────────── */
