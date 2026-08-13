@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Om mig · Hans-Peter Bonnichsen</title>
+<meta name="description" content="Vejen fra tysk grammatik og filmklip til AI-adoption. Om hvorfor jeg bygger det, jeg underviser i, og hvad jeg tror på om læring.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#indhold">Spring til indhold</a>
+
+<main class="frame">
+  <div class="frame__inner">
+
+    <!-- Topbar -->
+    <nav class="topbar" aria-label="Primær">
+      <a class="topbar__logo" href="index.html">HPB<span class="topbar__logo-dim">_SYSTEMS</span></a>
+
+      <ul class="topbar__nav">
+        <li><a href="index.html">Oversigt</a></li>
+        <li><a href="ydelser.html">Ydelser</a></li>
+        <li><a href="cases.html">Cases</a></li>
+        <li><a href="om.html" class="is-active" aria-current="page">Om mig</a></li>
+      </ul>
+
+      <div class="topbar__status">
+        <span class="chip chip--live"><span class="dot" aria-hidden="true"></span>Ledig fra nu</span>
+        <span class="chip">København</span>
+        <span class="chip">DA / EN</span>
+      </div>
+    </nav>
+
+    <header class="page-head" id="indhold">
+      <h1 class="page-head__title">Om mig</h1>
+      <p class="page-head__sub">
+        Forsiden fortæller, hvad jeg kan. Den her side fortæller, hvordan jeg endte
+        med at kunne det. Fire kapitler, i den rækkefølge de skete.
+      </p>
+    </header>
+
+    <div class="bento">
+
+      <!-- 01 ─────────────────────────────────────────────────────────── -->
+      <section class="card chapter" data-reveal>
+        <div class="chapter__head">
+          <span class="chapter__num">01</span>
+          <h2 class="chapter__title">Sproget</h2>
+        </div>
+
+        <div class="chapter__body">
+          <div class="prose">
+            <p>
+              Jeg læste tysk på Københavns Universitet med sidefag i film- og
+              medievidenskab. To fag der på papiret ikke har meget med hinanden at
+              gøre, men som handler om nøjagtig det samme: hvordan betydning flytter
+              sig fra afsender til modtager uden at gå i stykker undervejs.
+            </p>
+            <p>
+              Tysk lærte mig, at et sprog ikke er en bunke ord, men et system man kan
+              lære sig at bevæge sig rundt i. Film lærte mig, at rækkefølgen af det,
+              folk får at se, afgør hvad de forstår. <strong>Begge dele bruger jeg
+              stadig, hver gang jeg planlægger en workshop.</strong>
+            </p>
+            <p class="muted">
+              <!-- TODO: skriv en linje eller to om hvorfor det blev netop tysk og film.
+                   Hvad trak? En lærer, en film, et halvår i udlandet? Det er her læseren
+                   får fat i dig som person frem for som CV. -->
+              Der er en grund til, at det blev de to fag frem for to andre, og den er
+              værd at fortælle her.
+            </p>
+          </div>
+
+          <figure class="figure">
+            <img src="assets/portraet.jpg" alt="Portræt af Hans-Peter Bonnichsen" width="1000" height="1250">
+            <figcaption>Hans-Peter Bonnichsen</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 02 ─────────────────────────────────────────────────────────── -->
+      <section class="card chapter" data-reveal>
+        <div class="chapter__head">
+          <span class="chapter__num">02</span>
+          <h2 class="chapter__title">Klasselokalet</h2>
+        </div>
+
+        <div class="chapter__body chapter__body--plain">
+          <div class="prose">
+            <p>
+              Tolv år som gymnasielærer. Det er tolv år med at stå foran mennesker,
+              der ikke selv har valgt at være der klokken otte om morgenen, og
+              alligevel finde ud af, hvordan man får dem med.
+            </p>
+            <p>
+              Det er stadig den vigtigste erfaring, jeg har. Ikke fordi voksne i en
+              virksomhed opfører sig som gymnasieelever, men fordi mekanikken er den
+              samme: <strong>folk lærer ikke af at få noget forklaret. De lærer af at
+              prøve, fejle og prøve igen, mens der er nogen til stede der kan
+              hjælpe.</strong> Alt hvad jeg laver i dag, står på den erkendelse.
+            </p>
+            <p>
+              Undervejs blev jeg IT-vejleder og medlem af skolens AI-udvalg. Det
+              betød, at jeg både sad med ledelsen og skulle beslutte, hvad skolen
+              overhovedet skulle med AI, og bagefter stod i lokalet med de kolleger,
+              beslutningen ramte. At have prøvet begge sider har lært mig mere om
+              forandring end nogen bog om forandringsledelse kunne.
+            </p>
+            <p class="muted">
+              <!-- TODO: en konkret anekdote hører til her. Et forløb der gik galt,
+                   en kollega der skiftede mening, en time hvor du opdagede noget.
+                   Én god historie er mere overbevisende end tre afsnit om metode. -->
+              Her hører en konkret historie hjemme fra et af de forløb.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 ─────────────────────────────────────────────────────────── -->
+      <section class="card chapter" data-reveal>
+        <div class="chapter__head">
+          <span class="chapter__num">03</span>
+          <h2 class="chapter__title">Maskinen</h2>
+        </div>
+
+        <div class="chapter__body chapter__body--plain">
+          <div class="prose">
+            <p>
+              Da de generative modeller kom, gjorde jeg det, jeg altid gør med nyt
+              værktøj: skilte det ad. Jeg satte en lokal sprogmodel op, byggede en
+              RAG-løsning oven på skolens egen dokumentation og lavede agent-workflows
+              til planlægning. Ikke fordi det var den hurtigste vej til en chatbot,
+              men fordi <strong>jeg ikke kan undervise troværdigt i noget, jeg kun har
+              læst om.</strong>
+            </p>
+            <p>
+              Det samme gælder alt andet. Min computer kører en Linux-opsætning, jeg
+              har bygget fra bunden, fordi jeg gerne vil vide, hvad der sker under
+              overfladen. Denne hjemmeside er skrevet i hånden, uden framework, af
+              samme grund. Det er ikke nørderi for nørderiets skyld: det er sådan jeg
+              lærer, og det er derfor jeg kan svare på spørgsmål, der ligger uden for
+              slidesene.
+            </p>
+            <p>
+              Ved siden af fotograferer jeg og tegner i Procreate. Det er ikke arbejde,
+              men det er den samme muskel som filmvidenskaben trænede: at beslutte hvad
+              der skal være i billedet, og hvad der skal ud. Den beslutning er præcis
+              den samme, når jeg klipper et videokursus ned til det, der faktisk skal
+              siges.
+            </p>
+          </div>
+
+          <div class="gallery">
+            <!-- TODO: udskift de fire pladsholdere med billeder, fx to fotografier og
+                 to Procreate-arbejder. Format: <figure class="figure"><img src="assets/..."
+                 alt="..."><figcaption>...</figcaption></figure> -->
+            <div class="ph ph--square">FOTO 1</div>
+            <div class="ph ph--square">FOTO 2</div>
+            <div class="ph ph--square">TEGNING 1</div>
+            <div class="ph ph--square">TEGNING 2</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 ─────────────────────────────────────────────────────────── -->
+      <section class="card chapter" data-reveal>
+        <div class="chapter__head">
+          <span class="chapter__num">04</span>
+          <h2 class="chapter__title">Nu</h2>
+        </div>
+
+        <div class="chapter__body chapter__body--plain">
+          <div class="prose">
+            <p>
+              Jeg har brugt tolv år på at gøre svært stof brugbart for folk, der ikke
+              havde bedt om det. Nu vil jeg gøre det samme et sted, hvor stoffet er
+              AI, og hvor modtagerne er organisationer, der har investeret i noget,
+              de endnu ikke får nok ud af.
+            </p>
+            <p>
+              Jeg tror ikke på AI som erstatning for faglighed. Jeg tror på det som et
+              værktøj, der bliver farligt i hænderne på nogen, der ikke selv kan
+              vurdere svaret, og virkelig stærkt i hænderne på nogen, der kan.
+              <strong>Derfor handler mit arbejde lige så meget om dømmekraft som om
+              værktøjet.</strong> Det er også derfor, jeg måler på effekt: hvis
+              deltagerne ikke gør noget anderledes bagefter, var det underholdning.
+            </p>
+            <p>
+              Jeg arbejder bedst et sted med kort vej til dem, jeg arbejder sammen med,
+              hvor man kan sige "det her virkede ikke" uden at det bliver en sag. Og
+              jeg leverer bedst, når der er balance i det hele. Familie og venner er
+              ikke noget, jeg passer ved siden af arbejdet: de er grunden til, at jeg
+              kan holde til at gøre arbejdet ordentligt, år efter år.
+            </p>
+            <p class="muted">
+              <!-- TODO: tilføj gerne én konkret ting du gør for at trives, fx noget du
+                   løber, laver mad til, tager på tur med. Én detalje gør afsnittet
+                   troværdigt; flere gør det til en dating-profil. -->
+              Én konkret detalje om hverdagen hører til her.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontakt ─────────────────────────────────────────────────────── -->
+      <section class="card card--contact" aria-labelledby="kontakt-titel" data-reveal>
+        <div class="contact__text">
+          <span class="card__label" id="kontakt-titel">Kontakt</span>
+          <h2 class="card__title card__title--xl">Lad os tage en kop kaffe</h2>
+          <p class="card__text">
+            Er du nået hertil, er du sikkert allerede i gang med at overveje det.
+            Skriv, så finder vi et tidspunkt.
+          </p>
+        </div>
+
+        <!-- Samme video som på forsiden. Se kommentaren i index.html om hosting. -->
+        <figure class="contact__video">
+          <div class="video-ph">
+            <span class="video-ph__icon" aria-hidden="true">&#9654;</span>
+            <span class="video-ph__text">Kaffevideo kommer her</span>
+          </div>
+          <figcaption>Kaffe. Optaget og klippet af mig.</figcaption>
+        </figure>
+
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:hp.bonnichsen@gmail.com">hp.bonnichsen@gmail.com</a>
+          <a class="btn" href="assets/hpb_cv.pdf" download>Hent CV</a>
+          <!-- TODO: indsæt din LinkedIn-URL -->
+          <a class="btn" href="#">LinkedIn</a>
+        </div>
+      </section>
+
+    </div><!-- /bento -->
+
+    <footer class="footer">
+      <span>© <span id="year">2026</span> Hans-Peter Bonnichsen</span>
+      <span class="footer__dim"><a href="index.html">Tilbage til oversigten</a></span>
+    </footer>
+
+  </div>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>

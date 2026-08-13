@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hans-Peter Bonnichsen · Formidler af AI og audiovisuelle produktioner</title>
+<meta name="description" content="AI-konsulent, underviser og medieproducent. Jeg får AI ud at leve hos medarbejderne gennem masterclasses, workshops og videokurser. Med forankring og målt effekt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#dashboard">Spring til indhold</a>
+
+<!-- ── Wordmark ───────────────────────────────────────────────────────── -->
+<header class="wordmark">
+  <h1 class="wordmark__text">BONNICHSEN</h1>
+  <p class="wordmark__sub">Formidler af: AI &amp; audiovisuelle produktioner</p>
+</header>
+
+<!-- ── Dashboard-ramme ────────────────────────────────────────────────── -->
+<main class="frame" id="dashboard">
+  <div class="frame__inner">
+
+    <!-- Topbar -->
+    <nav class="topbar" aria-label="Primær">
+      <span class="topbar__logo">HPB<span class="topbar__logo-dim">_SYSTEMS</span></span>
+
+      <ul class="topbar__nav">
+        <li><a href="#dashboard" class="is-active" aria-current="page">Oversigt</a></li>
+        <li><a href="ydelser.html">Ydelser</a></li>
+        <li><a href="cases.html">Cases</a></li>
+        <li><a href="om.html">Om mig</a></li>
+      </ul>
+
+      <div class="topbar__status">
+        <span class="chip chip--live"><span class="dot" aria-hidden="true"></span>Ledig fra nu</span>
+        <span class="chip">København</span>
+        <span class="chip">DA / EN</span>
+      </div>
+    </nav>
+
+    <!-- ── Bento-grid ─────────────────────────────────────────────────── -->
+    <div class="bento">
+
+      <!-- KPI-stribe -->
+      <section class="card card--kpi" aria-label="Nøgletal" data-reveal>
+        <ul class="kpis">
+          <li class="kpi">
+            <span class="kpi__value" data-count="12" data-suffix="">0</span>
+            <span class="kpi__unit">års erfaring med at formidle komplekst stof</span>
+          </li>
+          <li class="kpi">
+            <span class="kpi__value" data-count="100" data-suffix="+">0</span>
+            <span class="kpi__unit">kolleger igennem mine AI-workshops</span>
+          </li>
+          <li class="kpi">
+            <span class="kpi__value" data-count="300" data-suffix="+">0</span>
+            <span class="kpi__unit">deltagere i AI-baserede læringsforløb</span>
+          </li>
+          <li class="kpi">
+            <span class="kpi__value" data-count="35" data-suffix=" %">0</span>
+            <span class="kpi__unit">målt stigning i aktiv brug af fagtermer</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Profil -->
+      <a class="card card--profile" href="om.html" data-reveal>
+        <div class="card__head">
+          <span class="card__label">Profil</span>
+          <span class="card__meta">Cand.mag.</span>
+        </div>
+
+        <!-- Terminal og indhold ligger i samme grid-celle, så de kan krydsfade
+             uden at kortet skifter højde. Boot-sekvensen er dekorativ: den vises
+             kun når JS kører, og kun én gang pr. session. -->
+        <div class="profile__stack">
+        <div class="terminal" data-terminal aria-hidden="true">
+          <pre class="terminal__out"></pre>
+        </div>
+
+        <div class="profile__content">
+        <div class="identity">
+          <!-- Bevidst uden foto: monogrammet holder profilkortet roligt, og
+               portrættet er gemt til om-siden. -->
+          <div class="avatar" aria-hidden="true">
+            <span class="avatar__monogram">HPB</span>
+          </div>
+          <div>
+            <h2 class="card__title card__title--lg">Hans-Peter Bonnichsen</h2>
+            <p class="card__org">AI-konsulent, underviser &amp; medieproducent</p>
+          </div>
+        </div>
+
+        <p class="lede">
+          Teknologien er sjældent problemet. Det er afstanden mellem værktøjet og
+          den travle medarbejder, der afgør, om AI bliver til værdi eller til et
+          abonnement, ingen bruger. Jeg lukker den afstand: i lokalet og i materialet.
+        </p>
+
+        <p class="card__text">
+          Jeg bygger selv løsningerne, underviser dem der skal bruge dem, og
+          producerer det materiale, der skal bære brugen videre bagefter.
+          Grundlæggende er jeg uddannet til at oversætte: først mellem dansk og tysk,
+          siden mellem billede og betydning, nu mellem det en model kan, og det en
+          medarbejder har brug for. Øvelsen er den samme hver gang. Find ud af hvad
+          modtageren allerede kan, og byg broen derfra. Cand.mag. i tysk og film- og
+          medievidenskab, master i informatik undervejs, tolv år som underviser og
+          egen medieproduktionsvirksomhed.
+        </p>
+
+        <span class="card__cta">Mere om mig<span class="arrow" aria-hidden="true">→</span></span>
+        </div><!-- /profile__content -->
+        </div><!-- /profile__stack -->
+      </a>
+
+      <!-- Metode -->
+      <section class="card card--method" aria-labelledby="metode-titel" data-reveal>
+        <div class="card__head">
+          <span class="card__label" id="metode-titel">Sådan skaber jeg læring, der bliver hængende</span>
+          <span class="card__meta">Fire trin</span>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">01</span>
+            <div>
+              <h3 class="step__title">Afdæk</h3>
+              <p class="step__text">
+                Al undervisning begynder med at finde ud af, hvad folk allerede kan,
+                og hvad de ikke tør spørge om. Jeg kortlægger arbejdsgange og
+                forforståelse, før jeg beslutter, hvad der overhovedet skal læres.
+              </p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <div>
+              <h3 class="step__title">Formidl</h3>
+              <p class="step__text">
+                Samme stof, forskellige indgange: den nysgerrige, den travle og den
+                skeptiske skal ikke undervises ens. Deltagerne arbejder med deres egne
+                opgaver, for ingen lærer et værktøj at kende ved at se andre bruge det.
+              </p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <div>
+              <h3 class="step__title">Forankr</h3>
+              <p class="step__text">
+                Læring, der ikke bliver brugt i næste uge, er glemt. Jeg bygger transfer
+                ind fra start med guides, playbooks og superbrugere der kan spørges. 
+                Det er her forskellen ligger mellem et godt kursus og reel adoption.
+              </p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <div>
+              <h3 class="step__title">Mål</h3>
+              <p class="step__text">
+                Jeg sætter læringsmål, der rent faktisk kan evalueres, og måler før og
+                efter. Så bliver effekten et tal, man kan tage med til ledelsen, i stedet
+                for en god fornemmelse i lokalet.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Ydelser -->
+      <a class="card card--services" href="ydelser.html" data-reveal>
+        <div class="card__head">
+          <span class="card__label">Ydelser</span>
+        </div>
+
+        <ul class="services">
+          <li class="service">
+            <h3 class="service__title">AI-masterclasses &amp; workshops</h3>
+            <p class="service__text">
+              Design og afvikling for hold i alle størrelser: fra direktion til
+              slutbrugere. Hands-on prompt engineering på deltagernes egne opgaver,
+              så de går fra lokalet med noget, de kan bruge samme eftermiddag.
+            </p>
+          </li>
+          <li class="service">
+            <h3 class="service__title">Videokurser &amp; e-learning</h3>
+            <p class="service__text">
+              Manuskript, optagelse, klip og publicering: jeg producerer materialet
+              selv. Læringsindhold der skal virke uden en underviser i rummet, og
+              som kan nå flere end en workshop kan.
+            </p>
+          </li>
+          <li class="service">
+            <h3 class="service__title">AI-adoption &amp; forankring</h3>
+            <p class="service__text">
+              Superbrugere, playbooks og opfølgning efter kick-off. Jeg bliver
+              hængende længe nok til, at brugen holder, også når konsulenten er
+              gået hjem.
+            </p>
+          </li>
+          <li class="service">
+            <h3 class="service__title">Strategisk sparring</h3>
+            <p class="service__text">
+              Rådgivning om hvor AI hører hjemme i organisationen &amp; hvor den ikke
+              gør. Jeg har selv siddet i det udvalg, der skulle træffe beslutningerne,
+              så jeg kender også modstanden indefra.
+            </p>
+          </li>
+          <li class="service">
+            <h3 class="service__title">Film- &amp; videoproduktion</h3>
+            <p class="service__text">
+              Formidlingsvideo, motion graphics og visuel identitet: fra idé til
+              færdig levering. Jeg driver egen medieproduktionsvirksomhed, så det er
+              et fag ved siden af undervisningen, ikke en hobby.
+            </p>
+          </li>
+        </ul>
+
+        <span class="card__cta">Se ydelserne i detaljer<span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+
+      <!-- Kompetencer -->
+      <a class="card card--skills" href="kompetencer.html" data-reveal>
+        <div class="card__head">
+          <span class="card__label">Kompetencer</span>
+        </div>
+
+        <div class="skillset">
+          <h3 class="skillset__head">Formidling &amp; forandring</h3>
+          <ul class="skillset__list">
+            <li>Workshopfacilitering for store grupper</li>
+            <li>Læringsdesign &amp; kursusudvikling</li>
+            <li>Forandringsledelse &amp; brugerforankring</li>
+            <li>Strategisk rådgivning af ledelse</li>
+          </ul>
+        </div>
+
+        <div class="skillset">
+          <h3 class="skillset__head">AI &amp; teknik</h3>
+          <ul class="skillset__list">
+            <li>Generativ AI i daglig arbejdsbrug</li>
+            <li>RAG-arkitektur &amp; lokale LLM'er</li>
+            <li>Agent-workflows &amp; prompt engineering</li>
+            <li>Python, JavaScript, HTML/CSS</li>
+          </ul>
+        </div>
+
+        <div class="skillset">
+          <h3 class="skillset__head">Produktion &amp; materiale</h3>
+          <ul class="skillset__list">
+            <li>Video: manuskript, optagelse, klip</li>
+            <li>Motion graphics &amp; grafisk design</li>
+            <li>E-learning- &amp; kursusmateriale</li>
+            <li>DaVinci Resolve, Blender, Photoshop</li>
+          </ul>
+        </div>
+
+        <span class="card__cta">Hele kompetenceprofilen<span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+
+      <!-- Cases -->
+      <a class="card card--case" href="cases/escape-room.html" data-reveal>
+        <div class="card__head">
+          <span class="card__label">Case 01</span>
+          <span class="tag">Læringsdesign</span>
+        </div>
+        <h3 class="card__title">AI-drevet escape room</h3>
+        <p class="card__org">Greve Gymnasium</p>
+        <p class="card__text">
+          Et forløb hvor AI er læringsmotoren i stedet for genvejen. Bygget som
+          koncept, afprøvet i stor skala og målt bagefter.
+        </p>
+        <dl class="facts">
+          <div><dt>Skala</dt><dd>150+ deltagere</dd></div>
+          <div><dt>Effekt</dt><dd class="facts__hi">+35 % aktiv brug af fagtermer, før/efter-test</dd></div>
+        </dl>
+        <span class="card__cta">Åbn case<span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="card card--case" href="cases/ai-strategi.html" data-reveal>
+        <div class="card__head">
+          <span class="card__label">Case 02</span>
+          <span class="tag">Fagdidaktik</span>
+        </div>
+        <h3 class="card__title">Når malerier taler tysk</h3>
+        <p class="card__org">Greve Gymnasium</p>
+        <p class="card__text">
+          Tysk sprogtræning møder kunsthistorie gennem AI-simulerede samtaler 
+          med personer på malerier fra Statens Museum for Kunst.
+        </p>
+        <dl class="facts">
+          <div><dt>Rolle</dt><dd>Rådgiver og underviser</dd></div>
+          <div><dt>Skala</dt><dd class="facts__hi">Workshops for 100+ kolleger</dd></div>
+        </dl>
+        <span class="card__cta">Åbn case<span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="card card--case" href="cases/rag-chatbot.html" data-reveal>
+        <div class="card__head">
+          <span class="card__label">Case 03</span>
+          <span class="tag">Implementering</span>
+        </div>
+        <h3 class="card__title">RAG-chatbot på egne data</h3>
+        <p class="card__org">Greve Gymnasium</p>
+        <p class="card__text">
+          Lokal LLM med RAG mod organisationens egen dokumentation, plus
+          agent-workflows til planlægning. Data forlader aldrig huset.
+        </p>
+        <dl class="facts">
+          <div><dt>Stak</dt><dd>Ollama, Open WebUI, RAG</dd></div>
+          <div><dt>Hvorfor</dt><dd class="facts__hi">Jeg underviser kun i det, jeg selv har bygget</dd></div>
+        </dl>
+        <span class="card__cta">Åbn case<span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="card card--case" href="cases/roskilde-elearning.html" data-reveal>
+        <div class="card__head">
+          <span class="card__label">Case 04</span>
+          <span class="tag">Materialeudvikling</span>
+        </div>
+        <h3 class="card__title">E-learning i stor skala</h3>
+        <p class="card__org">Roskilde Festival</p>
+        <p class="card__text">
+          Alt visuelt og grafisk arbejde til platformen der onboarder og uddanner
+          frivillige: læringsmateriale, der skal virke uden en underviser i rummet.
+        </p>
+        <dl class="facts">
+          <div><dt>Målgruppe</dt><dd class="facts__hi">8.000 frivillige årligt</dd></div>
+          <div><dt>Leverance</dt><dd>Visuel identitet &amp; materiale</dd></div>
+        </dl>
+        <span class="card__cta">Åbn case<span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+
+      <!-- Værktøjsstribe -->
+      <section class="card card--tools" aria-label="Værktøjer" data-reveal>
+        <span class="card__label">Værktøjer i daglig brug</span>
+        <ul class="tools">
+          <li>Claude Code</li>
+          <li>Hermes</li>
+          <li>Local-LLM</li>
+          <li>RAG-pipelines</li>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Photoshop</li>
+          <li>Blender</li>
+          <li>DaVinci Resolve</li>
+        </ul>
+      </section>
+
+      <!-- Kontakt -->
+      <section class="card card--contact" aria-labelledby="kontakt-titel" data-reveal>
+        <div class="contact__text">
+          <span class="card__label" id="kontakt-titel">Kontakt</span>
+          <h2 class="card__title card__title--xl">Lad os tage en kop kaffe</h2>
+          <p class="card__text">
+            Jeg søger en fuldtidsrolle i København, hvor formidling er kernen:
+            AI-adoption, undervisning og produktionen af det materiale, der skal
+            bære det videre. Gerne et sted, hvor rådgivning og hands-on arbejde
+            ligger i samme stilling.
+          </p>
+        </div>
+        <!-- Kaffevideoen. Videofilen ligger IKKE i repoet: læg den som asset på et
+             GitHub Release og sæt den direkte .mp4-URL ind nedenfor. Når URL'en er
+             på plads, slettes .video-ph og kommentaren omkring <video> fjernes.
+        <figure class="contact__video">
+          <video controls preload="none" playsinline poster="assets/kaffe-poster.jpg">
+            <source src="URL_TIL_KAFFEVIDEO.mp4" type="video/mp4">
+            <a href="URL_TIL_KAFFEVIDEO.mp4">Hent videoen</a>
+          </video>
+          <figcaption>Kaffe. Optaget og klippet af mig.</figcaption>
+        </figure>
+        -->
+        <figure class="contact__video">
+          <div class="video-ph">
+            <span class="video-ph__icon" aria-hidden="true">&#9654;</span>
+            <span class="video-ph__text">Kaffevideo kommer her</span>
+          </div>
+          <figcaption>Kaffe. Optaget og klippet af mig.</figcaption>
+        </figure>
+
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:hp.bonnichsen@gmail.com">hp.bonnichsen@gmail.com</a>
+          <!-- TODO: læg CV'et i assets/ -->
+          <a class="btn" href="assets/hpb_cv.pdf" download>Hent CV</a>
+          <!-- TODO: indsæt din LinkedIn-URL -->
+          <a class="btn" href="#">LinkedIn</a>
+        </div>
+      </section>
+
+    </div><!-- /bento -->
+
+    <footer class="footer">
+      <span>© <span id="year">2026</span> Hans-Peter Bonnichsen</span>
+      <span class="footer__dim">Alle tal på siden kan dokumenteres</span>
+    </footer>
+
+  </div>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
