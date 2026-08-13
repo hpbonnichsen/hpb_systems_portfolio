@@ -365,23 +365,15 @@
             ligger i samme stilling.
           </p>
         </div>
-        <!-- Kaffevideoen. Videofilen ligger IKKE i repoet: læg den som asset på et
-             GitHub Release og sæt den direkte .mp4-URL ind nedenfor. Når URL'en er
-             på plads, slettes .video-ph og kommentaren omkring <video> fjernes.
+        <!-- Videofilen ligger bevidst uden for repoet, som asset på et GitHub
+             Release. preload="none" betyder at der ikke hentes ét byte, før
+             nogen trykker play. -->
         <figure class="contact__video">
-          <video controls preload="none" playsinline poster="assets/kaffe-poster.jpg">
-            <source src="URL_TIL_KAFFEVIDEO.mp4" type="video/mp4">
-            <a href="URL_TIL_KAFFEVIDEO.mp4">Hent videoen</a>
+          <video controls preload="none" playsinline poster="assets/kaffe-poster.jpg" width="1280" height="720">
+            <source src="https://github.com/hpbonnichsen/hpb_systems_portfolio/releases/download/media-v1/kaffe.mp4" type="video/mp4">
+            <a href="https://github.com/hpbonnichsen/hpb_systems_portfolio/releases/download/media-v1/kaffe.mp4">Hent videoen</a>
           </video>
-          <figcaption>Kaffe. Optaget og klippet af mig.</figcaption>
-        </figure>
-        -->
-        <figure class="contact__video">
-          <div class="video-ph">
-            <span class="video-ph__icon" aria-hidden="true">&#9654;</span>
-            <span class="video-ph__text">Kaffevideo kommer her</span>
-          </div>
-          <figcaption>Kaffe. Optaget og klippet af mig.</figcaption>
+          <figcaption>Kaffe. 28 sekunder. Optaget og klippet af mig.</figcaption>
         </figure>
 
         <div class="contact__actions">
